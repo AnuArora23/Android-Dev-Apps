@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:textStyle="italic"
+            android:layout_margin="10dp"
+            android:textSize="55sp"
+            android:textColor="#9C27B0"
+            android:typeface="serif"
+            android:text="My Calculator"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:textColor="#3241C3"
+        android:text="Enter First Number"
+        />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/first_num"
+
+/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textAlignment="center"
+            android:textSize="40dp"
+            android:textColor="#3241C3"
+            android:text="Enter Second Number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/second_num"
+
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Add"
+            android:textColor="@color/white"
+            android:id="@+id/add_button"
+            android:layout_margin="10dp"
+
+
+            />
+            <Button
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="Subtract"
+                android:textColor="@color/white"
+                android:id="@+id/minus_button"
+                android:layout_margin="10dp"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="Multiply"
+                android:textColor="@color/white"
+
+                android:id="@+id/multiply_button"
+                android:layout_margin="10dp"
+                />
+
+            <Button
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="Divide"
+                android:textColor="@color/white"
+                android:id="@+id/div_button"
+                android:layout_margin="10dp"
+
+                />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+
+        >
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:textAlignment="center"
+            android:textSize="40dp"
+            android:textColor="#3241C3"
+            android:text=""
+            android:id="@+id/result"
+             />
+    </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
