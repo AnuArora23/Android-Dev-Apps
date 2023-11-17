@@ -17,25 +17,24 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        findID();
-
-        signup.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String usr=user_name.getText().toString();
-                Toast.makeText(MainActivity.this,"username is"+usr,Toast.LENGTH_SHORT).show();
-            }
-        });
-    }
-
-
-    public void findID()
-    {
         user_name=findViewById(R.id.username);
         emailid=findViewById(R.id.email);
         pswd=findViewById(R.id.pass);
         c_pswd=findViewById(R.id.c_pass);
         signup=findViewById(R.id.signupBtn);
         login=findViewById(R.id.loginBtn);
+       // findID();
+
+        signup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String usr = user_name.getText().toString();
+                Toast.makeText(MainActivity.this, "username is" + usr, Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
     }
+
+
 }

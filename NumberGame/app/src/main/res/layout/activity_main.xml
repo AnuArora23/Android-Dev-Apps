@@ -102,7 +102,7 @@
         android:textSize="30sp"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:text="You have guessed"
+        android:text=""
         />
 
     </LinearLayout>

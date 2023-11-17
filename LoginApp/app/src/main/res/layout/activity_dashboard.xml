@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:text="Welcome to Home Page"
+        android:textSize="35dp"
+        android:gravity="center"
+        android:textColor="#092884"
+        android:drawableRight="@drawable/baseline_person_24"
+        android:textStyle="bold"
+        android:layout_margin="25dp"
+        />
+
+</RelativeLayout>
